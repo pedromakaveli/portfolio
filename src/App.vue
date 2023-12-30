@@ -13,6 +13,16 @@
     </nav>
     <!-- finaliza o menu de navegação -->
 
+    <!-- Inicia a div de apresentação -->
+    <div class="grid place-content-center place-items-center min-h-[80vh] mb-35">
+      <h1 data-aos="fade-in"
+        class="font-vancouver font-normal text-[5.2rem] text-slate-50 uppercase tracking-[.10em] font-bold">Pedro Lacerda
+      </h1>
+      <h2 class="font-roboto-mono font-bold text-cyan-300 text-[1.25rem] uppercase tracking-[.20em]">Desenvolvedor
+        Front-end</h2>
+    </div>
+    <!-- Finaliza a div de apresentação  -->
+
   </div>
 </template>
 
@@ -28,8 +38,14 @@ export default {
   name: 'App',
   data() {
     return {
+      hover: false
     };
   },
 
+  methods: {
+    onToggle () {
+      this.hover =! this.hover
+    }
+  }
 }
 </script>

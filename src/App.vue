@@ -16,27 +16,12 @@
     <!-- Inicia a div de apresentação -->
     <div class="grid place-content-center place-items-center min-h-[80vh] mb-35">
       <h1 data-aos="fade-in"
-        class="font-vancouver font-normal text-[5.2rem] text-slate-50 uppercase tracking-[.10em] font-bold">Pedro Lacerda
+        class="font-vancouver font-normal text-[2.50rem] lg:text-[5.2rem] sm:text-[3.5rem] text-slate-50 uppercase tracking-[.10em] font-bold">Pedro Lacerda
       </h1>
-      <h2 class="font-roboto-mono font-bold text-cyan-300 text-[1.25rem] uppercase tracking-[.20em]">Desenvolvedor
+      <h2 class="font-roboto-mono font-bold text-cyan-300 text-[.80rem] lg:text-[1.25rem] sm:text-[.95rem] uppercase tracking-[.20em]">Desenvolvedor
         Front-end</h2>
     </div>
     <!-- Finaliza a div de apresentação  -->
-
-    <!-- Inicia a div do portfolio -->
-    <div class="divide-y divide-solid">
-      <div class="container min-h-[100vh] mx-auto p-20 flex flex-col">
-        <h1 class="cursor-pointer text-center text-sky-100 text-[1.5rem] hover:text-cyan-400"><span
-            class="text-cyan-400 text-[2.2rem]">{</span> Meus projetos <span class="text-cyan-400 text-[2.2rem]">}</span>
-        </h1>
-
-        <div class="mt-[100px] grid grid-cols-2 text-sky-100">
-
-        </div>
-
-      </div>
-    </div>
-    <!-- Finaliza a div do portfolio -->
 
   </div>
 </template>

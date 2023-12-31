@@ -1,69 +1,73 @@
 <template>
-  <div class="bg-gray-950 min-h-screen" id="app">
+  <div class="bg-primary min-h-screen" id="app">
     <!-- Inicia o o menu de navegação -->
     <nav class="white flex justify-center ">
-      <ul class="flex flex-wrap mt-10 justify-center gap-4 font-mono text-md text-slate-50">
+      <ul class="px-10 flex flex-wrap mt-10 justify-center gap-2 font-mono text-md text-slate-50 fixed" :class="scrollPosition ? 'bg-menu rounded-full backdrop-blur-md' : 'transparent'">
         <li class="grid hover:text-cyan-400 transition duration-150 cursor-pointer p-4">
           // home
         </li>
         <li class="hover:text-cyan-400 transition duration-150 cursor-pointer p-4">// portfólio</li>
         <li class="hover:text-cyan-400 transition duration-150 cursor-pointer p-4">// formação</li>
-        <li class="hover:text-cyan-400 transition duration-150 cursor-pointer p-4">// orçamento</li>
+        <li class="hover:text-cyan-400 transition duration-150 cursor-pointer p-4">// contato</li>
       </ul>
     </nav>
     <!-- finaliza o menu de navegação -->
 
     <!-- Inicia a div de apresentação -->
-    <div class="grid place-content-center place-items-center min-h-[80vh] mb-35">
+    <div class="mt-[80px] grid place-content-center place-items-center min-h-[100vh]">
       <h1 data-aos="fade-in"
-        class="font-vancouver font-normal text-[2.50rem] lg:text-[5.2rem] sm:text-[3.5rem] text-slate-50 uppercase tracking-[.10em] font-bold">
+        class="text-center font-vancouver font-normal text-[2.50rem] lg:text-[5.2rem] sm:text-[3.5rem] text-slate-50 uppercase tracking-[.10em] font-bold">
         Pedro Lacerda
       </h1>
       <h2
-        class="font-roboto-mono font-bold text-cyan-300 text-[.80rem] lg:text-[1.25rem] sm:text-[.95rem] uppercase tracking-[.20em]">
+        class="text-center font-roboto-mono font-bold text-cyan-bright text-[.80rem] lg:text-[1.25rem] sm:text-[.95rem] uppercase tracking-[.20em]">
         Desenvolvedor
         Front-end</h2>
+
+        <div class="mt-[45px] flex justify-start gap-5 mb-[100px] text-sm">
+          <a class="bg-cyan-bright pt-4 pb-4 px-10 uppercase font-roboto-mono hover:rounded-tr-xl" href="#">Currículo</a>
+          <a class="bg-pink text-white pt-4 pb-4 px-10 uppercase font-roboto-mono" href="#">Linkedin</a>
+        </div>
+
+        <div class="cursor-pointer animate-bounce bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
+          <svg class="w-6 h-6 text-cyan-bright" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </div>
     </div>
     <!-- Finaliza a div de apresentação  -->
 
-    <!-- Inicia a div do portfolio -->
-    <div class="divide-y divide-solid">
-      <div class="container min-h-[100vh] mx-auto p-20 flex flex-col">
-        <h1 class="cursor-pointer text-center text-sky-100 text-[1.5rem] hover:text-cyan-400"><span
-            class="text-cyan-400 text-[2.2rem]">{</span> Meus projetos <span class="text-cyan-400 text-[2.2rem]">}</span>
-        </h1>
-
-        <div class="mt-[100px] grid grid-cols-2 text-sky-100">
-
-        </div>
-
-      </div>
-    </div>
-    <!-- Finaliza a div do portfolio -->
+    <my-portfolio>
+    </my-portfolio>
 
   </div>
 </template>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
 
 <script>
+import portfolioSection from './components/portfolioSection';
 
 export default {
+
   name: 'App',
+  components: {
+    'my-portfolio': portfolioSection
+  },
   data() {
     return {
-      hover: false
+      scrollPosition: null
     };
   },
 
   methods: {
-    onToggle () {
-      this.hover =! this.hover
+    onScroll () {
+      this.scrollPosition = window.scrollY
+      console.log(this.scrollPosition)
     }
+  },
+
+  mounted() {
+    window.addEventListener('scroll', this.onScroll);
   }
 }
 </script>

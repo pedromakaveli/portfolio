@@ -2,7 +2,7 @@
   <div class="bg-primary min-h-screen" id="app">
     <!-- Inicia o o menu de navegação -->
     <nav class="white flex justify-center ">
-      <ul class="px-10 flex flex-wrap mt-10 justify-center gap-2 font-mono text-md text-slate-50 fixed" :class="scrollPosition ? 'bg-menu rounded-full backdrop-blur-md' : 'transparent'">
+      <ul class="px-10 flex flex-wrap mt-10 justify-center gap-2 font-mono text-md text-slate-50 fixed" :class="scrollPosition ? 'transition duration-500 ease-in-out bg-menu rounded-full backdrop-blur-md' : 'transparent'">
         <li class="grid hover:text-cyan-400 transition duration-150 cursor-pointer p-4">
           // home
         </li>

@@ -4,6 +4,8 @@
 
 @tailwind utilities;
 
+@import url('style.css');
+
 @font-face {
     font-family: 'Roboto Mono';
     src: url('fonts/RobotoMono-VariableFont_wght.ttf');

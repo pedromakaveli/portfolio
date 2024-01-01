@@ -21,24 +21,12 @@ export default {
     'my-portfolio': portfolioSection,
     'introduction': introSection,
     'navbar': navbarMenu
-    
+
   },
   data() {
     return {
-      scrollPosition: null
+      
     };
   },
-
-  methods: {
-    onScroll () {
-      this.scrollPosition = window.scrollY
-      console.log(this.scrollPosition)
-    }
-    ,
-  },
-
-  mounted() {
-    window.addEventListener('scroll', this.onScroll);
-  }
 }
 </script>

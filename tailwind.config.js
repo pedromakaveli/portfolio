@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'roboto-mono': ['Roboto Mono'],
-        'vancouver': ['Vancouver']
+        'vancouver': ['Vancouver'],
+        'montserrat': ['Montserrat'],
       },
       colors: {
         'primary': '#090911',

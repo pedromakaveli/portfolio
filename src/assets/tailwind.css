@@ -15,3 +15,8 @@
     font-family: 'Vancouver';
     src: url('fonts/Vancouver-Gothic.otf');
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf');
+}

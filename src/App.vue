@@ -14,13 +14,16 @@
 import portfolioSection from './components/portfolioSection';
 import introSection from './components/introSection.vue';
 import navbarMenu from './components/navbarMenu.vue';
+import mobileMenu from './components/navbarMenu.vue';
+
 export default {
 
   name: 'App',
   components: {
     'my-portfolio': portfolioSection,
     'introduction': introSection,
-    'navbar': navbarMenu
+    'navbar': navbarMenu,
+    'mobile-menu': mobileMenu
 
   },
   data() {

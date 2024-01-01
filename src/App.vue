@@ -7,6 +7,8 @@
 
     <my-portfolio></my-portfolio>
 
+    <mobile-menu></mobile-menu>
+
   </div>
 </template>
 
@@ -14,7 +16,7 @@
 import portfolioSection from './components/portfolioSection';
 import introSection from './components/introSection.vue';
 import navbarMenu from './components/navbarMenu.vue';
-import mobileMenu from './components/navbarMenu.vue';
+import mobileMenu from './components/mobileMenu.vue';
 
 export default {
 

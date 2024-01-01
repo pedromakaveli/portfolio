@@ -9,7 +9,7 @@
 
             <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div v-for="(image, index) in images" :key="index" class="grid gap-4">
-                        <img :src="image" class="rounded-lg h-auto max-w-full" alt="">
+                        <img :src="image" class="rounded-lg h-auto max-w-full cursor-pointer" alt="">
                     </div>
             </div>
         </div>

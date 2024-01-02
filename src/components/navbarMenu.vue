@@ -14,28 +14,27 @@
             <li class="hover:text-cyan-400 transition duration-150 cursor-pointer p-4 font-bold">// contato</li>
         </ul>
     </nav>
-
 </template>
 
 <script>
 
 export default {
-  data() {
-    return {
-      scrollPosition: null
-    };
-  },
+    data() {
+        return {
+            scrollPosition: null
+        };
+    },
 
-  methods: {
-    onScroll () {
-      this.scrollPosition = window.scrollY
-      console.log(this.scrollPosition)
+    methods: {
+        onScroll() {
+            this.scrollPosition = window.scrollY
+            console.log(this.scrollPosition)
+        }
+        ,
+    },
+
+    mounted() {
+        window.addEventListener('scroll', this.onScroll);
     }
-    ,
-  },
-
-  mounted() {
-    window.addEventListener('scroll', this.onScroll);
-  }
 }
 </script>

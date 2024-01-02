@@ -11,9 +11,10 @@
             Front-end</h2>
 
         <div class="mt-[45px] flex justify-start gap-5 mb-[100px] text-sm">
-            <a class="bg-cyan-bright pt-4 pb-4 px-10 uppercase font-roboto-mono hover:bg-ocean-blue hover:text-sky-100 transition transition-[2s]" href="#">Currículo</a>
-            <a class="bg-pink text-white pt-4 pb-4 px-10 uppercase font-roboto-mono" href="#">Linkedin</a>
+            <x-button>Currículo</x-button>
+            <x-button>Linkedin</x-button>
         </div>
+
 
         <div
             class="z-0 relative top-[90px] cursor-pointer animate-bounce bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
@@ -27,7 +28,11 @@
 </template>
 
 <script>
+    import myButton from './myButton.vue';
     export default {
+        components:{
+            'x-button': myButton
+        },
         data () {
             return {
 

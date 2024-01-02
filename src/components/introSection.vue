@@ -11,8 +11,8 @@
             Front-end</h2>
 
         <div class="mt-[45px] flex justify-start gap-5 mb-[100px] text-sm">
-            <x-button>Currículo</x-button>
-            <x-button>Linkedin</x-button>
+            <x-button class="bg-cyan-bright text-gray-800 text-[1rem]">Currículo</x-button>
+            <x-button class="bg-pink text-white text-[1rem]">Linkedin</x-button>
         </div>
 
 

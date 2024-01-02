@@ -1,5 +1,5 @@
 <template>
-    <a class="pt-4 pb-4 px-10 uppercase font-roboto-mono transition transition-[2s]" href="#">
+    <a class="pt-[18px] pb-[18px] px-10 uppercase font-roboto-mono" href="#">
         <slot></slot>
     </a>
 </template>

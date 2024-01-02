@@ -38,10 +38,13 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
+    
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "no-dupe-keys": "warn"
+    }
   },
   "browserslist": [
     "> 1%",

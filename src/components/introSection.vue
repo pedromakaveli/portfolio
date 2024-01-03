@@ -1,6 +1,6 @@
 <template>
     <!-- Inicia a div de apresentação -->
-    <div class="md:mt-[80px] grid place-content-center place-items-center min-h-[100vh]">
+    <div class="md:mt-[80px] grid place-content-center place-items-center min-h-[95vh]">
         <h1
             class="text-center font-vancouver font-normal text-[2.50rem] lg:text-[5.2rem] sm:text-[3.5rem] text-slate-50 uppercase tracking-[.10em] font-bold">
             Pedro Lacerda
@@ -10,9 +10,9 @@
             Desenvolvedor
             Front-end</h2>
 
-        <div class="mt-[45px] flex justify-start gap-5 mb-[100px] text-sm">
-            <x-button class="bg-cyan-bright text-gray-800 text-[1rem]">Currículo</x-button>
-            <x-button class="bg-pink text-white text-[1rem]">Linkedin</x-button>
+        <div class="mt-10 flex flex-wrap justify-center p-5 md:justify-start gap-5 text-sm">
+            <x-button class="bg-cyan-bright text-gray-800 text-[0.90rem] md:text-[1rem]">Currículo</x-button>
+            <x-button class="bg-pink text-white text-[0.95rem]">Linkedin</x-button>
         </div>
 
 

@@ -14,14 +14,17 @@
             </div>
 
 
-            <div class="mt-10 grid grid-cols-2 max-[600px]:grid-cols-1 md:grid-cols-4 gap-10">
+            <div class="mt-10 grid grid-cols-2 grid-cols-1 max-[1000px]:grid-cols-3 min-[1000px]:grid-cols-4 gap-10">
                 <div v-for="(image, index) in images" :key="index" class="hover:scale-[105%] ease-in-out duration-150 bg-black rounded-lg">
                     <img :src="image.img" class="rounded-t-md h-auto max-w-full cursor-pointer" alt="">
                         
-                    <div class="px-5 pt-5 pb-8 text-sky-100 flex gap-5 flex-wrap items-start cursor-pointer">
+                    <div class="px-5 pt-5 pb-8 text-sky-100 cursor-pointer">
                         <h2 class="w-full text-xl">{{image.title}}</h2>
-                        <span class="bg-cyan-bright text-slate-950 rounded-full px-5 py-2 text-center font-bold text-[0.70rem] font-montserrat">Front-end</span>
-                        <span class="bg-pink text-white rounded-full px-5 py-2 text-center font-bold text-[0.70rem] font-montserrat">Front-end</span>
+                        <div class="grid gap-5 mt-5 min-[1320px]:grid-cols-2 items-center">
+                            <span class="bg-cyan-bright text-slate-950 rounded-full px-5 py-2 text-center font-bold text-[0.70rem] font-montserrat">Front-end</span>
+                            <span class="bg-pink text-white rounded-full px-5 py-2 text-center font-bold text-[0.70rem] font-montserrat">Front-end</span>
+
+                        </div>
                     </div>
                 </div>
             </div>

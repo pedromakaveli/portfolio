@@ -14,7 +14,7 @@ module.exports = {
         'cyan-bright': '#00FFF0',
         'ocean-blue': '#05CDFF',
         'pink': '#FF058C',
-        'menu': 'rgba(22, 22, 37, 0.61)',
+        'menu': 'rgba(38, 64, 77, 0.61)',
       }
     },
   },

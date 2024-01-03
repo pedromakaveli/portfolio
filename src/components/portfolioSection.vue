@@ -7,8 +7,8 @@
             </h1>
 
             <div class="mt-10 grid grid-cols-2 max-[600px]:grid-cols-1 md:grid-cols-4 gap-10">
-                    <div v-for="(image, index) in images" :key="index" class="bg-black rounded-lg">
-                        <img :src="image" class="rounded-t-md h-auto max-w-full cursor-pointer hover:scale-[90%] ease-in-out duration-150" alt="">
+                    <div v-for="(image, index) in images" :key="index" class="hover:scale-[105%] ease-in-out duration-150 bg-black rounded-lg">
+                        <img :src="image" class="rounded-t-md h-auto max-w-full cursor-pointer" alt="">
                         
                         <div class="px-5 pt-5 pb-8 text-sky-100 flex gap-5 flex-wrap items-start cursor-pointer">
                             <h2 class="w-full text-xl">Alura</h2>

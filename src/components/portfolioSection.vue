@@ -7,16 +7,16 @@
                     <span class="text-cyan-400 text-[2.2rem]">{</span> Meus projetos <span class="text-cyan-400 text-[2.2rem]">}</span>
                 </h1>
 
-                <div class="justify-self-center items-center md:justify-self-end text-white flex gap-x-5 cursor-pointer">
+                <div class="justify-self-center items-center xl:justify-self-end text-white flex gap-x-5 cursor-pointer">
                     <span class="bg-white text-gray-950 font-bold rounded-md px-7 py-2 text-center text-[.85rem] font-mono">// Front-end</span>
                     <span class="bg-slate-800 text-white rounded-md px-10 py-2 text-center text-[.85rem] font-mono">// Design UI</span>
                 </div>
             </div>
 
 
-            <div class="mt-10 grid grid-cols-2 grid-cols-1 max-[1000px]:grid-cols-3 min-[1000px]:grid-cols-4 gap-10">
+            <div class="mt-10 gap-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <div v-for="(image, index) in images" :key="index" class="hover:scale-[105%] ease-in-out duration-150 bg-black rounded-lg">
-                    <img :src="image.img" class="rounded-t-md h-auto max-w-full cursor-pointer" alt="">
+                    <img :src="image.img" class="rounded-t-md sm:h-auto max-w-full cursor-pointer" alt="">
                         
                     <div class="px-5 pt-5 pb-8 text-sky-100 cursor-pointer">
                         <h2 class="w-full text-xl">{{image.title}}</h2>

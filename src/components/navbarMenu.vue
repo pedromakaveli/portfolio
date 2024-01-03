@@ -8,8 +8,8 @@
 
         </ul>
         <div class="md:hidden flex flex-col p-5 justify-self-end">
-            <div :click="activeMobile =! activeMobile">
-                <font-awesome-icon icon="fa-solid fa-user-secret" />
+            <div>
+                <font-awesome-icon @click="activeMobile = ! activeMobile" :icon="activeMobile ? ['fas', 'fa-circle-xmark'] : ['fas', 'bars']" size="2xl" style="color: #ffffff;" />
             </div>
         </div>
     </nav>

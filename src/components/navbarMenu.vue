@@ -9,7 +9,7 @@
         </ul>
         <div class="md:hidden flex flex-col p-5 justify-self-end">
             <div :click="activeMobile =! activeMobile">
-                <img class="cursor-pointer" @onclick="activeMobile =! activeMobile" src="../assets/imgs/burguer.svg"/>
+                <font-awesome-icon icon="fa-solid fa-user-secret" />
             </div>
         </div>
     </nav>

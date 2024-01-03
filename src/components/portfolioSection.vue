@@ -1,15 +1,15 @@
 <template>
     <!-- Inicia a div do portfolio -->
-    <div class="bg-zinc-950 pt-5 pb-5 px-20 min-h-[100vh]">
+    <div class="bg-zinc-950 md:pt-5 pb-5 px-20 min-h-[100vh]">
         <div class="container mx-auto">
-            <div class="grid justify-items-center items-center">
+            <div class="grid justify-items-center gap-10 items-center">
                 <h1 id="portfolio" class="cursor-pointer font-montserrat text-sky-100 text-[1.5rem] md:text-[2rem] hover:text-cyan-400">
                     <span class="text-cyan-400 text-[2.2rem]">{</span> Meus projetos <span class="text-cyan-400 text-[2.2rem]">}</span>
                 </h1>
 
-                <div class="justify-self-end text-white flex gap-x-5 cursor-pointer">
-                    <span class="bg-white text-gray-950 font-bold rounded-full px-7 py-2 text-center text-[.90rem] font-montserrat">// Front-end</span>
-                    <span class="bg-slate-800 text-white rounded-full px-10 py-2 text-center text-[.90rem] font-montserrat">// Design UI</span>
+                <div class="justify-self-center items-center md:justify-self-end text-white flex gap-x-5 cursor-pointer">
+                    <span class="bg-white text-gray-950 font-bold rounded-md px-7 py-2 text-center text-[.85rem] font-mono">// Front-end</span>
+                    <span class="bg-slate-800 text-white rounded-md px-10 py-2 text-center text-[.85rem] font-mono">// Design UI</span>
                 </div>
             </div>
 

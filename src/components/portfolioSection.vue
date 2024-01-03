@@ -19,7 +19,7 @@
                     <img :src="image.img" class="rounded-t-md h-auto max-w-full cursor-pointer" alt="">
                         
                     <div class="px-5 pt-5 pb-8 text-sky-100 flex gap-5 flex-wrap items-start cursor-pointer">
-                        <h2 class="w-full text-xl">Alura</h2>
+                        <h2 class="w-full text-xl">{{image.title}}</h2>
                         <span class="bg-cyan-bright text-slate-950 rounded-full px-5 py-2 text-center font-bold text-[0.70rem] font-montserrat">Front-end</span>
                         <span class="bg-pink text-white rounded-full px-5 py-2 text-center font-bold text-[0.70rem] font-montserrat">Front-end</span>
                     </div>
@@ -35,10 +35,14 @@ export default {
     data() {
         return {
             images: [
-                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg'},
-                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg'},
-                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg'},
-                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg'},
+                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Dev Space'},
+                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Origamid'},
+                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Rocket Seat'},
+                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Alura'},
+                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Dev Space'},
+                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Origamid'},
+                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Rocket Seat'},
+                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Alura'},
         ]
         };
     }

@@ -1,6 +1,6 @@
 <template>
     <!-- Inicia a div de apresentação -->
-    <div class="md:mt-[80px] grid place-content-center place-items-center min-h-[95vh]">
+    <div class="md:mt-[80px] grid place-content-center place-items-center min-h-[100vh]">
         <h1
             class="text-center font-vancouver font-normal text-[2.50rem] lg:text-[5.2rem] sm:text-[3.5rem] text-slate-50 uppercase tracking-[.10em] font-bold">
             Pedro Lacerda

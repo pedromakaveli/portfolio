@@ -7,11 +7,11 @@
             </li>
 
         </ul>
-        <div class="md:hidden fixed p-5 z-[100]" :class="activeMobile ? 'p-10 bg-menu backdrop-blur-sm min-w-full' : 'p-10 transparent' ">
+        <div class="md:hidden fixed p-5 z-[100]" :class="activeMobile ? 'p-10 bg-pink backdrop-blur-sm min-w-full h-full flex justify-center items-center' : 'p-10 transparent' ">
             <div class="mx-5">
                 <font-awesome-icon class="p-5 absolute top-0 right-0 cursor-pointer" @click="activeMobile = ! activeMobile" :icon="activeMobile ? ['fas', 'fa-circle-xmark'] : ['fas', 'bars']" size="2xl" style="color: #ffffff;" />
-                <ul v-if="activeMobile" class="flex flex-col items-center gap-10">
-                    <li class="text-xl" v-for="(link, index) in menuLinks" :key="index">
+                <ul v-if="activeMobile">
+                    <li class="text-xl font-roboto-mono leading-[3]" v-for="(link, index) in menuLinks" :key="index">
                         <a href="/">{{link.nome}}</a>
                     </li>
                 </ul>

@@ -7,10 +7,13 @@
 
     <my-portfolio></my-portfolio>
 
+    <formacao></formacao>
+
   </div>
 </template>
 
 <script>
+import formacaoSection from './components/formacaoSection';
 import portfolioSection from './components/portfolioSection';
 import introSection from './components/introSection.vue';
 import navbarMenu from './components/navbarMenu.vue';
@@ -19,6 +22,7 @@ export default {
 
   name: 'App',
   components: {
+    'formacao': formacaoSection,
     'my-portfolio': portfolioSection,
     'introduction': introSection,
     'navbar': navbarMenu,

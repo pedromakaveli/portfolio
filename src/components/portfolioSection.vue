@@ -16,7 +16,7 @@
 
             <div class="mt-10 gap-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <div v-for="(image, index) in images" :key="index" class="hover:scale-[105%] ease-in-out duration-150 bg-black rounded-lg">
-                    <img :src="image.img" class="rounded-t-md sm:h-auto max-w-full cursor-pointer" alt="">
+                    <img :src="image.img" class="rounded-t-md sm:h-auto max-w-full cursor-pointer hover:brightness-120" alt="">
                         
                     <div class="px-5 pt-5 pb-8 text-sky-100 cursor-pointer">
                         <h2 class="w-full text-xl">{{image.title}}</h2>
@@ -38,14 +38,14 @@ export default {
     data() {
         return {
             images: [
-                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Dev Space'},
-                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Origamid'},
-                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Rocket Seat'},
-                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Alura'},
-                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Dev Space'},
-                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Origamid'},
-                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Rocket Seat'},
-                {'img': 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg', 'title': 'Alura'},
+                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Dev Space'},
+                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Origamid'},
+                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Rocket Seat'},
+                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Alura'},
+                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Dev Space'},
+                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Origamid'},
+                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Dev Space'},
+                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Origamid'},
         ]
         };
     }

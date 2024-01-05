@@ -14,7 +14,7 @@
                         <div class="rounded-mg bg-white col-span-6 text-black rounded-xl text-lg">
                             <div class="my-[70px] cursos">
                                 <div  class="curso mb-2" v-for="(curso, index) in formacao" :key="index">
-                                    <div class="flex px-[60px] py-5 flex-col gap-[5px]">
+                                    <div @click="schoolSelected = curso.instituicao" class="flex px-[60px] py-5 flex-col gap-[5px]">
                                         <h1 :class="
                                         curso.instituicao == 'Estácio' ? 'detail-blue' : '' ||
                                         curso.instituicao == 'Origamid' ? 'detail-purple origamid' : '' ||
@@ -45,8 +45,14 @@ export default {
                 {'curso': 'Desenvolvimento Web', 'instituicao': 'CEFET-MG'},
             ],
 
-            selectedCourse: false
+            schoolSelected: ''
         };
+    },
+
+    watch: {
+        schoolSelected () {
+            return console.log(this.schoolSelected);
+        }
     }
 }
 </script>

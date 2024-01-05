@@ -6,15 +6,16 @@
                 <span class="text-cyan-400 text-[2.2rem]">{</span> Formação <span class="text-cyan-400 text-[2.2rem]">}</span></h1>
 
                 <div class="mt-10 flex justify-center">
-                    <div class="grid grid-cols-12 bg-secondary h-[700px] w-[60vw] items-center p-10 rounded-xl">
-                        <div class="self-start grid justify-center items-center col-span-6 p-10 text-white">
-                            
+                    <div class="grid grid-cols-12 h-[700px] w-[60vw] items-center p-10 rounded-xl bg-secondary">
+                        <div class="self-start grid justify-center justify-items-center items-center col-span-6 p-10 text-white">
+                            <h1 class="text-[2rem] font-bold">{{schoolSelected.instituicao}}</h1>
+                            <h2 class="text-md">{{schoolSelected.curso}}</h2>
                         </div>
 
                         <div class="rounded-mg bg-white col-span-6 text-black rounded-xl text-lg">
                             <div class="my-[70px] cursos">
                                 <div  class="curso mb-2" v-for="(curso, index) in formacao" :key="index">
-                                    <div @click="schoolSelected = curso.instituicao" class="flex px-[60px] py-5 flex-col gap-[5px]">
+                                    <div @click="schoolSelected = curso" class="flex px-[60px] py-5 flex-col gap-[5px]">
                                         <h1 :class="
                                         curso.instituicao == 'Estácio' ? 'detail-blue' : '' ||
                                         curso.instituicao == 'Origamid' ? 'detail-purple origamid' : '' ||
@@ -45,13 +46,13 @@ export default {
                 {'curso': 'Desenvolvimento Web', 'instituicao': 'CEFET-MG'},
             ],
 
-            schoolSelected: ''
+            schoolSelected: []
         };
     },
 
     watch: {
         schoolSelected () {
-            return console.log(this.schoolSelected);
+            return console.log(this.schoolSelected.curso);
         }
     }
 }

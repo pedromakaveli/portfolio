@@ -1,15 +1,21 @@
 <template>
     <!-- Inicia a div do portfolio -->
-    <div class="mt-20 bg-primary pt-10 md:pt-20 pb-5 px-20 min-h-[100vh]">
+    <div class="mt-20 bg-black pt-10 md:pt-20 pb-5 px-20 min-h-[100vh]">
         <div class="container mx-auto">
             <h1 id="formacao" class="text-center cursor-pointer font-montserrat text-sky-100 text-[1.5rem] md:text-[2rem] hover:text-cyan-400">
                 <span class="text-cyan-400 text-[2.2rem]">{</span> Formação <span class="text-cyan-400 text-[2.2rem]">}</span></h1>
 
                 <div class="mt-10 flex justify-center">
-                    <div class="grid grid-cols-12 h-[700px] w-[60vw] items-center p-10 rounded-xl bg-secondary">
-                        <div class="self-start grid justify-center justify-items-center items-center col-span-6 p-10 text-white">
-                            <h1 class="text-[2rem] font-bold">{{schoolSelected.instituicao}}</h1>
-                            <h2 class="text-md">{{schoolSelected.curso}}</h2>
+                    <div class="grid grid-cols-12 h-[700px] w-[60vw] items-center p-10 rounded-xl bg-zinc-950">
+                        <div class="mt-10 self-start grid justify-center justify-items-center items-center col-span-6 p-10 text-white">
+                            <h1 :class="schoolSelected.instituicao == 'Estácio' ? 'estacio-title' : '' || 
+                            schoolSelected.instituicao == 'Origamid' ? 'origamid-title' : ''" 
+                            class="text-[2.5rem] font-montserrat uppercase font-bold">{{schoolSelected.instituicao}}</h1>
+                            <h2 class="text-[1rem] uppercase font-montserrat mt-1 text-gray-20">{{schoolSelected.curso}}</h2>
+
+                            <div v-if="schoolSelected.instituicao == 'Estácio'" class="estacio mt-20">
+                                <my-button></my-button>
+                            </div>
                         </div>
 
                         <div class="rounded-mg bg-white col-span-6 text-black rounded-xl text-lg">
@@ -37,7 +43,12 @@
 </template>
 
 <script>
+import myButton from './myButton.vue'
 export default {
+    components: {
+        'my-button': myButton
+    },
+
     data() {
         return {
             formacao: [

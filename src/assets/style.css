@@ -1,3 +1,29 @@
 html {
     scroll-behavior: smooth;
 }
+
+.detail-purple, .detail-blue {
+    position: relative
+}
+
+.detail-purple::before, .detail-blue::before{
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 20px;
+    top: 12px;
+    left: -30px;
+    background: linear-gradient(130deg, #7305FF 0%, #BE05FF 100%), linear-gradient(130deg, #7305FF 0%, #BE05FF 100%); 
+
+}
+
+.detail-blue::before {
+    background: linear-gradient(180deg, #05CDFF 0%, #05FFD2 100%); 
+}
+
+.origamid {
+    background: linear-gradient(126deg, #DB00FF 28.96%, #7000FF 75.29%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}

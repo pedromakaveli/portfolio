@@ -10,7 +10,7 @@ module.exports = {
       },
       colors: {
         'primary': '#090911',
-        'secondary': '#080814',
+        'secondary': '#12121E',
         'cyan-bright': '#00FFF0',
         'ocean-blue': '#05CDFF',
         'pink': '#FF058C',

@@ -12,9 +12,9 @@ html {
     content: '';
     position: absolute;
     height: 6px;
-    width: 20px;
-    top: 12px;
-    left: -30px;
+    width: 25px;
+    top: 20px;
+    left: -50px;
     background: linear-gradient(130deg, #7305FF 0%, #BE05FF 100%), linear-gradient(130deg, #7305FF 0%, #BE05FF 100%);
 
 }

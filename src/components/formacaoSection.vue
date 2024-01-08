@@ -5,7 +5,7 @@
             <h1 id="formacao" class="text-center cursor-pointer font-bold font-montserrat text-sky-100 text-[1.5rem] md:text-[2rem] hover:text-cyan-400">
                 <span class="text-cyan-400 text-[2.2rem]">{</span>🎓 Formação <span class="text-cyan-400 text-[2.2rem]">}</span></h1>
 
-                <div class="flex justify-center content-center items-center min-h-[70vh] gap-10">
+                <div class="gap-10 grid mt-10 md:flex justify-center content-center items-center min-h-[70vh]">
                     <div v-for="(formacao, index) in formacao" :key="index" class="flex flex-col gap-2 h-[400px] w-[400px] px-10 py-10 course bg-black rounded-lg hover:scale-[105%] ease-in-out duration-150">
                         
                         <div class="flex-grow cursor-pointer">

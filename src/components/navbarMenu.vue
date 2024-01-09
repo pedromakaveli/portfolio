@@ -1,23 +1,15 @@
 <template>
-    <nav id="navtop" class="flex justify-end md:justify-center text-white">
-        <ul class="z-10 px-10 hidden md:flex flex-wrap mt-10 items-center gap-2 font-mono text-md text-slate-50 fixed"
-            :class="scrollPosition ? 'transition duration-500 ease-in-out bg-menu rounded-full backdrop-blur-sm' : 'transparent'">
-            <li v-for="(link, index) in menuLinks" :key="index" class="grid hover:text-cyan-400 transition duration-150 cursor-pointer pt-5 px-5 pb-5 font-bold">
-                <a :href="link.link">{{link.nome}}</a>
-            </li>
+    <header class="fixed top-0 left-0 w-[100vw] px-5 py-[25px] z-[5]" :class="scrollPosition && activeMobile != true ? 'transition duration-500 ease-in-out bg-menu backdrop-blur-sm' : 'mt-0'">
+            
+        <nav class="flex justify-center">
+            <ul class="flex items-center content-center flex-wrap text-cyan-bright font-roboto-mono text-[1rem] gap-10">
+                <li v-for="link, index in menuLinks" :key="index" class="px-[10px] py-[px]">
+                    <a :href="link.link">{{ link.nome }}</a>
+                </li>
+            </ul>
 
-        </ul>
-        <div class="md:hidden fixed p-5 z-[100]" :class="activeMobile ? 'p-10 bg-pink backdrop-blur-sm min-w-full h-full flex justify-center items-center' : 'p-10 transparent' ">
-            <div class="mx-5">
-                <font-awesome-icon class="p-5 absolute top-0 right-0 cursor-pointer" @click="activeMobile = ! activeMobile" :icon="activeMobile ? ['fas', 'fa-circle-xmark'] : ['fas', 'bars']" size="2xl" style="color: #ffffff;" />
-                <ul v-if="activeMobile">
-                    <li class="text-xl font-roboto-mono leading-[3]" v-for="(link, index) in menuLinks" :key="index">
-                        <a href="/">{{link.nome}}</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 </template>
 
 <script>

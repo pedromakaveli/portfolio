@@ -1,18 +1,16 @@
 <template>
-    <header class="bg-transparent backdrop-blur-none fixed md:fixed top-0 left-0 w-[100vw] px-5 py-[25px] z-[5]" :class="scrollPosition ? 'transition duration-500 ease-in-out bg-menu backdrop-blur-sm' : 'mt-0'">
-            
-        <nav class="flex justify-end md:flex justify-center">
+    <header class="fixed justify-end md:fixed top-0 left-0 w-[100vw] px-5 py-[25px] z-[5]" :class="scrollPosition ? 'transition duration-500 ease-in-out bg-menu backdrop-blur-sm' : 'mt-0'">
+        <nav class="flex justify-center">
             <ul class="hidden md:flex items-center content-center flex-wrap text-cyan-bright font-roboto-mono text-[1rem] gap-10">
                 <li v-for="link, index in menuLinks" :key="index" class="px-[10px] py-[px]">
                     <a :href="link.link">{{ link.nome }}</a>
                 </li>
             </ul>
-
-            <div class="md:hidden">
-                <font-awesome-icon class="p-5 absolute top-0 right-0 cursor-pointer" @click="activeMobile = ! activeMobile" :icon="activeMobile ? ['fas', 'fa-circle-xmark'] : ['fas', 'bars']" size="2xl" style="color: #ffffff;" />
-            </div>
-
         </nav>
+        
+            <div class="visible flex justify-end md:hidden">
+                <h3>teste</h3>
+            </div>
     </header>
 </template>
 

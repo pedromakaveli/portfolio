@@ -3,9 +3,9 @@
 
     <navbar></navbar>
 
-    <introduction id="intro"></introduction>
+    <introduction data-aos="fade-right" data-aos-duration="1200" id="intro"></introduction>
 
-    <my-portfolio></my-portfolio>
+    <my-portfolio data-aos="fade-up" data-aos-duration="600"></my-portfolio>
 
     <formacao></formacao>
 

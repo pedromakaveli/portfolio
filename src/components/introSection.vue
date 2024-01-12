@@ -12,7 +12,7 @@
 
         <div class="mt-10 flex flex-wrap justify-center p-5 md:justify-start gap-5 text-sm">
             <x-button class="bg-cyan-bright text-gray-800 text-[0.90rem] md:text-[1rem]">Currículo</x-button>
-            <x-button class="bg-pink text-white text-[0.95rem]">Linkedin</x-button>
+            <x-button class="bg-pink text-white text-[0.95rem]" href="https://www.linkedin.com/in/pedro-augusto-7959a91b4/" target="_blank">Linkedin</x-button>
         </div>
 
 

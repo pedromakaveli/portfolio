@@ -1,12 +1,12 @@
 <template>
     <!-- Inicia a div do portfolio -->
-    <div  class="mt-20 pt-10 md:pt-20 pb-5 px-20 min-h-screen">
+    <div class="mt-20 pt-10 md:pt-20 pb-5 px-20 min-h-screen">
         <div class="container mx-auto">
-            <h1 data-aos="fade-right" data-aos-duration="600" id="formacao" class="text-center cursor-pointer font-bold font-montserrat text-sky-100 text-[1.5rem] md:text-[2rem] hover:text-cyan-400">
+            <h1 data-aos="fade-right" data-aos-duration="600" id="formation" class="text-center cursor-pointer font-bold font-montserrat text-sky-100 text-[1.5rem] md:text-[2rem] hover:text-cyan-400">
                 <span class="text-cyan-400 text-[2.2rem]">{</span>🎓 Formação <span class="text-cyan-400 text-[2.2rem]">}</span></h1>
 
                 <div class="gap-10 grid mt-10 md:flex justify-center content-center items-center min-h-[70vh]">
-                    <div data-aos="flip-left" data-aos-duration="2000" v-for="(formacao, index) in formacao" :key="index" class="flex flex-col gap-2 h-[400px] w-[600px] px-10 py-[50px] course formation-bg border-solid border-[1px] border-cyan-bright ease-in-out duration-150">
+                    <div data-aos="flip-left" data-aos-duration="2000" v-for="(formacao, index) in formacao" :key="index" class="flex flex-col gap-2 h-[400px] w-[600px] px-10 py-[50px] course formation-bg border-solid border-[1px] border-gray-700 ease-in-out duration-150">
                         
                         <div class="flex-grow cursor-pointer">
                             <h1 :class="{

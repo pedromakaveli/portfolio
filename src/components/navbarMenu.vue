@@ -23,7 +23,7 @@ export default {
             menuLinks: [
                 {'nome': '// home', 'link': '#intro'},
                 {'nome': '// portfolio', 'link': '#portfolio'},
-                {'nome': '// formação', 'link': '/'},
+                {'nome': '// formação', 'link': '#formation'},
                 {'nome': '// contato', 'link': '/'},
             ],
             activeMobile: false,

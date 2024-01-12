@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-zinc-950 min-h-screen" id="app">
+  <div class="fundo min-h-screen" id="app">
 
     <navbar></navbar>
 

@@ -1,6 +1,6 @@
 <template>
     <!-- Inicia a div do portfolio -->
-    <div class="bg-zinc-950 md:pt-5 pb-5 px-20 min-h-[100vh]">
+    <div class=" md:pt-5 pb-5 px-20 min-h-[100vh]">
         <div class="container mx-auto">
             <div class="grid justify-items-center gap-10 items-center">
                 <h1 id="portfolio" class="cursor-pointer font-montserrat text-sky-100 text-[1.5rem] md:text-[2rem] hover:text-cyan-400">
@@ -15,8 +15,8 @@
 
 
             <div class="mt-10 gap-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                <div v-for="(image, index) in images" :key="index" class="hover:scale-[105%] ease-in-out duration-150 bg-black rounded-lg">
-                    <img :src="image.img" class="rounded-t-md sm:h-auto max-w-full cursor-pointer hover:brightness-120" alt="">
+                <div v-for="(image, index) in images" :key="index" class="hover:scale-[105%] ease-in-out duration-150 bg-secondary">
+                    <img :src="image.img" class="rounded-t-xl sm:h-auto max-w-full cursor-pointer hover:brightness-120" alt="">
                         
                     <div class="px-5 pt-5 pb-8 text-sky-100 cursor-pointer">
                         <h2 class="w-full text-xl">{{image.title}}</h2>

@@ -48,3 +48,12 @@ html {
     font-weight: 900;
     letter-spacing: -0.4px;
 }
+
+.fundo {
+    background: linear-gradient(0deg, #0B0218 64.22%, #30046F 180.2%);
+}
+
+.formation-bg {
+    background: linear-gradient(181deg, #0FFFD4 -135.64%, #0B0219 28.95%);
+
+}

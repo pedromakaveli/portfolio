@@ -10,11 +10,11 @@ module.exports = {
       },
       colors: {
         'primary': '#090911',
-        'secondary': '#12121E',
-        'cyan-bright': '#00FFF0',
+        'secondary': '#01012b',
+        'cyan-bright': '#05d9e8',
         'ocean-blue': '#05CDFF',
-        'pink': '#FF058C',
-        'menu': 'rgba(95, 95, 95, 0.50)',
+        'pink': '#ff2a6d',
+        'menu': 'rgba(1,1,43, 0.30)',
       }
     },
   },

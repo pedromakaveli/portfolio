@@ -7,10 +7,10 @@
                     <span class="text-cyan-400 text-[2.2rem]">{</span> Meus projetos <span class="text-cyan-400 text-[2.2rem]">}</span>
                 </h1>
 
-                <div class="justify-self-center items-center xl:justify-self-end text-white flex gap-x-5 cursor-pointer">
+                <!-- <div class="justify-self-center items-center xl:justify-self-end text-white flex gap-x-5 cursor-pointer">
                     <span class="bg-white text-gray-950 font-bold rounded-md px-7 py-2 text-center text-[.85rem] font-mono">// Front-end</span>
                     <span class="bg-slate-800 text-white rounded-md px-10 py-2 text-center text-[.85rem] font-mono">// Design UI</span>
-                </div>
+                </div> -->
             </div>
 
 
@@ -27,6 +27,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

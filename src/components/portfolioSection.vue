@@ -3,8 +3,8 @@
     <div class=" md:pt-5 pb-5 px-20 min-h-[100vh]">
         <div class="container mx-auto">
             <div class="grid justify-items-center gap-10 items-center">
-                <h1 id="portfolio" class="cursor-pointer font-montserrat text-sky-100 text-[1.5rem] md:text-[2rem] hover:text-cyan-400">
-                    <span class="text-cyan-400 text-[2.2rem]">{</span> Meus projetos <span class="text-cyan-400 text-[2.2rem]">}</span>
+                <h1 id="portfolio" class="cursor-pointer font-montserrat text-sky-100 text-[1.4rem] sm:text-[1.5rem] md:text-[2rem] hover:text-cyan-400">
+                    <span class="text-cyan-400 text-[2rem] sm:text-[2rem] md:text-[2.2rem]">{</span> Meus projetos <span class="text-cyan-400 text-[2rem] sm:text-[2rem] md:text-[2.2rem]">}</span>
                 </h1>
 
                 <!-- <div class="justify-self-center items-center xl:justify-self-end text-white flex gap-x-5 cursor-pointer">

@@ -17,7 +17,7 @@
             <div class="mt-10 gap-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <div v-for="(image, index) in images" :key="index" class="hover:scale-[105%] ease-in-out duration-150 bg-secondary">
                     <img :src="image.img" class="rounded-t-xl sm:h-auto max-w-full cursor-pointer hover:brightness-120" alt="">
-                        
+
                     <div class="px-5 pt-5 pb-8 text-sky-100 cursor-pointer">
                         <h2 class="w-full text-xl">{{image.title}}</h2>
                         <div class="grid gap-5 mt-5 min-[1320px]:grid-cols-2 items-center">
@@ -39,14 +39,12 @@ export default {
     data() {
         return {
             images: [
-                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Dev Space'},
-                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Origamid'},
-                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Rocket Seat'},
-                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Alura'},
-                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Dev Space'},
-                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Origamid'},
-                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Dev Space'},
-                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Origamid'},
+                {'img': 'https://camo.githubusercontent.com/4d0dfa1cbc3098007e0fe7dcfbe7420bc2a1d7639134c70683bd1cf1f3f1c1ff/68747470733a2f2f692e696d6775722e636f6d2f375563506d30422e706e67', 'title': 'Orkut'},
+                {'img': 'https://camo.githubusercontent.com/0181dc55280e60efa92c593eef883d9a25d95334cd45a225e8c33b566e4eab71/68747470733a2f2f692e6962622e636f2f34546344487a482f53637265656e73686f742d32303233303733312d3131313732352e706e67', 'title': 'Kenai'},
+                {'img': 'https://camo.githubusercontent.com/e75e57ce61208f7dbc9edb05025f59350c00ce756eb168415c70488be72840ee/68747470733a2f2f692e696d6775722e636f6d2f5265756e7967572e706e67', 'title': 'Twitch'},
+                {'img': 'https://camo.githubusercontent.com/ff1250f6e76f62ba8587b9273a1b7a197f7dceb57d329ee0b2433d2620e703cd/68747470733a2f2f692e696d6775722e636f6d2f4c6a4d32494c342e706e67', 'title': 'Viagem de Chihiro'},
+                {'img': 'https://camo.githubusercontent.com/96f349df0dbbef379e0e4b58f67025491c28145f71a9a3b3bd2843ff592a3a20/68747470733a2f2f692e696d6775722e636f6d2f35535a5650426f2e706e67', 'title': 'Loki'},
+                {'img': 'https://camo.githubusercontent.com/f99b414062b9542f3aef80ebf5d1c5a60d79b2603d7c4c7be4ac92b3c71008be/68747470733a2f2f692e696d6775722e636f6d2f693931396967432e706e67', 'title': 'Discord Login'},
         ]
         };
     }

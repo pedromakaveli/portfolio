@@ -38,7 +38,7 @@ export default {
                 {'nome': '// formação', 'link': '#formation'},
                 {'nome': '// contato', 'link': '/'},
             ],
-            activeMobile: false,
+            activeMobile: false
         };
     },
 

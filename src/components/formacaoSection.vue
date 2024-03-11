@@ -1,27 +1,24 @@
 <template>
     <!-- Inicia a div do portfolio -->
-    <div class="mt-20 pt-10 md:pt-20 pb-5 px-20 min-h-screen">
-        <div class="container mx-auto">
-            <h1 data-aos="fade-right" data-aos-duration="600" id="formation" class="text-center cursor-pointer font-bold font-montserrat text-sky-100 text-[1.5rem] md:text-[2rem] hover:text-cyan-400">
-                <span class="text-cyan-400 text-[2.2rem]">{</span>🎓 Formação <span class="text-cyan-400 text-[2.2rem]">}</span></h1>
+    <div class="mt-20 pt-10 md:pt-20 pb-5 px-20 min-h-screen grid grid-cols-1 lg:grid-cols-2">
 
-                <div class="gap-10 grid mt-10 md:flex justify-center content-center items-center min-h-[70vh]">
-                    <div data-aos="flip-left" data-aos-duration="2000" v-for="(formacao, index) in formacao" :key="index" class="flex flex-col gap-2 h-[400px] w-[600px] px-10 py-[50px] course formation-bg border-solid border-[1px] border-gray-700 ease-in-out duration-150">
-                        
-                        <div class="flex-grow cursor-pointer">
-                            <h1 :class="{
-                                    'detail-blue': formacao.instituicao === 'Estácio' || formacao.instituicao === 'CEFET-MG',
-                                    'detail-purple': formacao.instituicao === 'Origamid'
-                                }" class="flex-grow text-white text-[1.6rem] font-montserrat uppercase font-bold">
-                                {{formacao.instituicao}}
-                            
-                            </h1>
+        <h1 class="text-center text-[2rem] md:text-[3rem] xl:text-[4rem] text-cyan-bright font-bold">FORMAÇÃO</h1>
 
-                            <span class="text-white font-montserrat text-[.88rem]">{{formacao.tipo}} em {{formacao.curso}}</span>
-                        </div>
+        <div>
+            <p class="text-center md:text-center lg:text-start xl:text-start mt-10 text-white text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] max-w-[65ch]">Minha mais recente experiência acadêmica foi o mestrado 🎓 que fiz no exterior em UX Design. Além disso me mantenho sempre atualizado com cursos intensivos online. </p>
+
+            <div class="mt-10 grid grid-cols-1 xl:flex xl:flex-wrap xl:content-between xl:items-start gap-5 ">
+                <div v-for="course, index in formacao" :key="index" class="flex gap-5 flex-col bg-[#000] w-[100%] xl:w-[250px] xl:h-[250px] rounded text-white py-4 px-5">
+                    <h1 class="text-gray-200 text-[0.90rem] uppercase">{{course.tipo}}</h1>
+                    <h2 class="font-bold max-w-[25ch]">{{course.curso}}</h2>
+                    <div class="flex-grow"></div> <!-- Adiciona espaço entre o texto e o título -->
+                    <div class="flex flex-col justify-end"> <!-- Container para alinhar o título no final -->
+                        <h2 class="text-gray-200">{{course.instituicao}}</h2>
                     </div>
-                    
                 </div>
+
+            </div>
+
         </div>
     </div>
 <!-- Finaliza a div do portfolio -->

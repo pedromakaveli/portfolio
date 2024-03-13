@@ -2,17 +2,18 @@
     <!-- Inicia a div do portfolio -->
     <div class="mt-20 pt-10 md:pt-20 pb-5 px-20 min-h-screen grid grid-cols-1 lg:grid-cols-2">
 
-        <h1 class="text-center text-[2rem] md:text-[3rem] xl:text-[4rem] text-cyan-bright font-bold">FORMAÇÃO</h1>
+        <h1 data-aos="fade-right" data-aos-duration="1200" class="text-center text-[2rem] md:text-[3rem] xl:text-[4rem] text-cyan-bright font-bold">FORMAÇÃO</h1>
 
         <div>
-            <p class="text-center md:text-center lg:text-start xl:text-start mt-10 text-white text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] max-w-[65ch]">
+            <p data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" class="text-center md:text-center lg:text-start xl:text-start mt-10 text-white text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] max-w-[65ch]">
                 Minha mais recente experiência acadêmica foi no curso de tecnólogo em Análise e Desenvolvimento de Sistemas 🎓
                 Visando sempre estar atualizado, estou frequentemente me adaptando e aprendendo através das documentações oficiais e de cursos
                 que abrangem as tecnologias que utilizo.
             </p>
 
             <div class="mt-10 grid grid-cols-1 xl:flex xl:flex-wrap xl:content-between xl:items-start gap-5 ">
-                <div v-for="course, index in formacao" :key="index" class="flex gap-5 flex-col bg-[#000] w-[100%] xl:w-[250px] xl:h-[250px] rounded text-white py-4 px-5">
+                <div data-aos="flip-left" v-for="course, index in formacao" :key="index" class="flex gap-5 flex-col bg-[#000] w-[100%] xl:w-[250px] xl:h-[250px] rounded text-white py-4 px-5">
                     <h1 class="text-gray-200 text-[0.90rem] uppercase">{{course.tipo}}</h1>
                     <h2 class="font-bold max-w-[25ch]">{{course.curso}}</h2>
                     <div class="flex-grow"></div> <!-- Adiciona espaço entre o texto e o título -->

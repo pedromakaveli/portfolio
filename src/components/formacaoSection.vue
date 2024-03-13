@@ -5,7 +5,11 @@
         <h1 class="text-center text-[2rem] md:text-[3rem] xl:text-[4rem] text-cyan-bright font-bold">FORMAÇÃO</h1>
 
         <div>
-            <p class="text-center md:text-center lg:text-start xl:text-start mt-10 text-white text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] max-w-[65ch]">Minha mais recente experiência acadêmica foi o mestrado 🎓 que fiz no exterior em UX Design. Além disso me mantenho sempre atualizado com cursos intensivos online. </p>
+            <p class="text-center md:text-center lg:text-start xl:text-start mt-10 text-white text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] max-w-[65ch]">
+                Minha mais recente experiência acadêmica foi no curso de tecnólogo em Análise e Desenvolvimento de Sistemas 🎓
+                Visando sempre estar atualizado, estou frequentemente me adaptando e aprendendo através das documentações oficiais e de cursos
+                que abrangem as tecnologias que utilizo.
+            </p>
 
             <div class="mt-10 grid grid-cols-1 xl:flex xl:flex-wrap xl:content-between xl:items-start gap-5 ">
                 <div v-for="course, index in formacao" :key="index" class="flex gap-5 flex-col bg-[#000] w-[100%] xl:w-[250px] xl:h-[250px] rounded text-white py-4 px-5">

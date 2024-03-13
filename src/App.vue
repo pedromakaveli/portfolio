@@ -5,9 +5,9 @@
 
     <introduction data-aos="fade-right" data-aos-duration="1200" id="intro"></introduction>
 
-    <my-portfolio data-aos="fade-up" data-aos-duration="600"></my-portfolio>
+    <my-portfolio id="portfolio" data-aos="fade-up" data-aos-duration="600"></my-portfolio>
 
-    <formacao></formacao>
+    <formacao id="formation"></formacao>
 
   </div>
 </template>
@@ -30,7 +30,7 @@ export default {
   },
   data() {
     return {
-      
+
     };
   },
 }

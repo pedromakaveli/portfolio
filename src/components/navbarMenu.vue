@@ -17,7 +17,7 @@
                 <div v-if="activeMobile" class="text-cyan-bright font-roboto-mono items-center text-[1.3rem] w-full h-full flex justify-center">
                     <ul>
                         <li v-for="(link, index) in menuLinks" :key="index" class="my-20 py-2">
-                            <a :href="link.link">{{ link.nome }}</a>
+                            <a v-on:click="activeMobile = !activeMobile" :href="link.link">{{ link.nome }}</a>
                         </li>
                     </ul>
                 </div>
